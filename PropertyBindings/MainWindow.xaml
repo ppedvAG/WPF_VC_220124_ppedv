@@ -43,7 +43,8 @@
                     Value="5"/>
             <!--Mode=OneWayToSource stellt die Bindung für die Richtung Ziel->Quelle her-->
             <!--UST=PropertyChanged aktualisiert das Element, wenn die Quell-Property geändert wird-->
-            <TextBox Width="80" Text="{Binding ElementName=Sdr_Drei, Path=Value, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"/>
+            <!--Delay definiert den Millisekundenabstand, bis die Bindung in Richtung Source getriggert wird-->
+            <TextBox Width="80" Text="{Binding ElementName=Sdr_Drei, Path=Value, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged, Delay=1000}"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal">
