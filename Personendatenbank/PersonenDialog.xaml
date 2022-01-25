@@ -100,13 +100,40 @@
                     Grid.Column="1" Grid.Row="5">
             <RadioButton Content="M"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht"
+                             ConverterParameter="{x:Static local:Gender.Männlich}">
+                        <Binding.Converter>
+                            <local:GenderToBoolConverter/>
+                        </Binding.Converter>
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
             <RadioButton Content="W"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht"
+                             ConverterParameter="{x:Static local:Gender.Weiblich}">
+                        <Binding.Converter>
+                            <local:GenderToBoolConverter/>
+                        </Binding.Converter>
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
             <RadioButton Content="D"
                          GroupName="Rbg_Gender"
-                         VerticalContentAlignment="Center"/>
+                         VerticalContentAlignment="Center">
+                <RadioButton.IsChecked>
+                    <Binding Path="Geschlecht"
+                             ConverterParameter="{x:Static local:Gender.Divers}">
+                        <Binding.Converter>
+                            <local:GenderToBoolConverter/>
+                        </Binding.Converter>
+                    </Binding>
+                </RadioButton.IsChecked>
+            </RadioButton>
         </StackPanel>
 
         <WrapPanel Grid.Row="6" Grid.ColumnSpan="2"
