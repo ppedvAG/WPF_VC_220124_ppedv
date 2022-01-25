@@ -62,7 +62,7 @@
                  Text="{Binding ElementName=Sdr_Alpha, Path=Value, UpdateSourceTrigger=PropertyChanged}"/>
 
 
-        <TextBlock Text="{Binding ElementName=Rct_Output_2, Path=Fill, StringFormat=Picked color: {0}, UpdateSourceTrigger=PropertyChanged}"
+        <TextBlock Text="{Binding ElementName=Rct_Output, Path=Fill, StringFormat=Picked color: {0}}"
                    HorizontalAlignment="Center" 
                    Margin="5"
                    Grid.Row="4" Grid.ColumnSpan="3"/>
@@ -70,7 +70,7 @@
         <Border BorderBrush="Black" BorderThickness="1" 
                 Width="100" Height="100"
                 Grid.Row="5" Grid.ColumnSpan="3">
-            <Rectangle x:Name="Rct_Output_2" Width="100" Height="100">
+            <Rectangle x:Name="Rct_Output" Width="100" Height="100">
                 <Rectangle.Fill>
                     <MultiBinding>
 
