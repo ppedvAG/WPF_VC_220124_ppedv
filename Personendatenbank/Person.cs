@@ -38,6 +38,7 @@ namespace Personendatenbank
             this.nachname = String.Empty;
             this.Geburtsdatum = DateTime.Now;
             this.Geschlecht = Gender.Weiblich;
+
         }
     }
 }
