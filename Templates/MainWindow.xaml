@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Templates"
         mc:Ignorable="d"
-        Title="MainWindow" Height="367.015" Width="544.972">
+        Title="MainWindow" Height="393" Width="271">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Template">
@@ -52,7 +52,7 @@
                 <TextBlock Text=" "/>
                 <TextBox Text="{Binding Alter}" Width="30"/>
                 <Button Content="Löschen"
-                        Click="Button_Click_1"
+                        Click="Btn_Loeschen_02_Click"
                         Tag="{Binding}"/>
             </StackPanel>
         </DataTemplate>
