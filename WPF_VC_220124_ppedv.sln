@@ -27,7 +27,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M09_Validation", "Validatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M10_Trigger", "Trigger\M10_Trigger.csproj", "{DECC3819-F2C7-430B-93C6-40779C52D1CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControls", "UserControls\UserControls.csproj", "{3158A0C4-E27B-412E-BAE7-F6401044CCE7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M11.0_UserControls", "UserControls\M11.0_UserControls.csproj", "{3158A0C4-E27B-412E-BAE7-F6401044CCE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "M11.1_CustomControls", "CustomControls\M11.1_CustomControls.csproj", "{90271435-3365-4E74-BC3A-1DC18B8711CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{3158A0C4-E27B-412E-BAE7-F6401044CCE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3158A0C4-E27B-412E-BAE7-F6401044CCE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3158A0C4-E27B-412E-BAE7-F6401044CCE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90271435-3365-4E74-BC3A-1DC18B8711CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90271435-3365-4E74-BC3A-1DC18B8711CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90271435-3365-4E74-BC3A-1DC18B8711CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90271435-3365-4E74-BC3A-1DC18B8711CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

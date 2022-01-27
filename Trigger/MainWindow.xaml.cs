@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserControls;
 
 namespace Trigger
 {
@@ -49,9 +50,11 @@ namespace Trigger
             BoolVal = !BoolVal;
         }
 
+        //EventHandler des UserControls (vgl. M11_UserControls)
         private void ColorPicker_Tap(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(ColorPicker.PickedColor.ToString());
+            MessageBox.Show((sender as ColorPicker).PickedColor.ToString());
+            (sender as ColorPicker).PickedColor.ToString();
         }
     }
 }
