@@ -57,6 +57,6 @@ namespace MVVM.ViewModel
         }
 
         //Event, welches die GUI über Veränderungen informiert
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
     }
 }

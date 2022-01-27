@@ -98,5 +98,22 @@
                 </Binding>
             </TextBox.Text>
         </TextBox>
+
+        <!--BindingGroup-Beispiel (so nicht funktionsfähig :( )-->
+        <StackPanel x:Name="BindingGroupBsp"
+                    Validation.ErrorTemplate="{StaticResource Ctp_Error_02}"
+                    Margin="20">
+            <StackPanel.BindingGroup>
+                <BindingGroup Name="bindingGroup">
+                    <BindingGroup.ValidationRules>
+                        <local:IPv4Validation/>
+                    </BindingGroup.ValidationRules>
+                </BindingGroup>
+            </StackPanel.BindingGroup>
+            <TextBox x:Name="Tbx_IpInput_4"
+                 Validation.ErrorTemplate="{StaticResource Ctp_Error_02}"
+                 Text="{Binding Path=IP, UpdateSourceTrigger=PropertyChanged, BindingGroupName=bindingGroup}"/>
+            <TextBlock x:Name="Tbl_IpOutput_3"/>
+        </StackPanel>
     </StackPanel>
 </Window>
